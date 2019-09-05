@@ -20,7 +20,7 @@ class MP3Importer
     self.files.each{|words| Song.new_by_file_name(words) } 
     
     
-    #binding.pry 
+    binding.pry 
   end
  
    
