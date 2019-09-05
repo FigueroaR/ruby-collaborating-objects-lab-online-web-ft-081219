@@ -17,9 +17,8 @@ class MP3Importer
   end 
    
   def import
-    array = []
-    self.files.each{|words| Song.new_by_file_name(words) } 
-    
+    future_array = self.files.each{|words| Song.new_by_file_name(words) } 
+    future_array.flat_map
     
     binding.pry 
   end
