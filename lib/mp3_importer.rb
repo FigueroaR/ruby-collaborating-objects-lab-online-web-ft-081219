@@ -20,7 +20,7 @@ class MP3Importer
     self.files
     
     
-    #binding.pry 
+    binding.pry 
   end
  
    
