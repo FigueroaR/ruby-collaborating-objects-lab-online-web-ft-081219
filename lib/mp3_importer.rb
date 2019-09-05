@@ -17,8 +17,8 @@ class MP3Importer
   end 
    
   def import
-    future_array = self.files.collect{|words| Song.new_by_file_name(words)}.map 
-    future_array
+    future_array = self.files.collect{|words| Song.new_by_file_name(words) } 
+    
     
     #binding.pry 
   end
