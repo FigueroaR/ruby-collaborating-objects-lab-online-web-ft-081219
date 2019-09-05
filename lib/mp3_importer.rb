@@ -17,7 +17,7 @@ class MP3Importer
   end 
    
   def import
-    self.new_by_file_name(Song.all)
+    self.files.each{| words| words.new_by_file_name } 
     
     
     #binding.pry 
