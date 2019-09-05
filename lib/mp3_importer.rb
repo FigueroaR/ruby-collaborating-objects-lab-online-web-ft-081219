@@ -17,7 +17,8 @@ class MP3Importer
   end 
    
   def import
-    self.files.each{|words| Song.new_by_file_name(words) << array } 
+    array = []
+    self.files.each{|words| Song.new_by_file_name(words).push(array) } 
     
     
     binding.pry 
